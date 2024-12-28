@@ -1,15 +1,26 @@
 {% extends 'base.html' %}
 {% block content %}
+<style>
+    .btn-developers{
+        margin:0 0 0 5px;
+    }
+
+    @media(max-width:600px){
+        .btn-developers{
+        margin: 10px 0 10px 0;
+        }
+    }
+</style>
 <section class="hero">
     <div class="hero-content">
-        <h1 class="hero-title">We <span><3 </span> people who code</h1>
+        <h1 class="hero-title">We <span><3 </span> people who read</h1>
         <p class="hero-paragraph">
-            We build products that empower developers and connect them to solutions that enable productivity, growth, and discovery.
+            We build products that empower students and connect them to solutions that enable productivity, growth, and discovery.
         </p>
         <div class="hero-options">
-            <a href="#" class="btn btn-developers">For developers</a>
-            <a href="#" class="btn btn-businesses">For businesses</a>
-            <a href="{% url 'stackbase:question-lists' %}" class="btn btn-developers" style="margin-left: 5px;">Latest Questions</a>
+            <a href="#" class="btn btn-developers">For students</a>
+            <a href="#" class="btn btn-businesses">For teachers</a>
+            <a href="{% url 'stackbase:question-lists' %}" class="btn btn-developers">Latest Questions</a>
 
         </div>
     </div>
@@ -19,10 +30,10 @@
 <section class="for-developers">
    <div class="container">
        <div class="section-head">
-           <h2 class="section-title">For developers, by developers
+           <h2 class="section-title">For Students, by students
            </h2>
            <div class="section-line"></div>
-           <p class="section-description">Stack Overflow is an <a href="#">open community</a> for anyone that codes. We help you get answers to your toughest coding questions, share knowledge with your coworkers in private, and find your next dream job.
+           <p class="section-description">Solverflow is an <a href="#">open community</a> for anyone that solves. We help you get answers to your toughest questions, share knowledge with your's in private, and break your tests.
            </p>
        </div>
        <div class="options">
@@ -51,7 +62,7 @@
                    Public Q&A
                </div>
                <div class="option-description">
-                   Level up with Stack Overflow while you work. Share knowledge privately with your coworkers using our flagship Q&A engine.
+                   Level up with Solverflow while you work. Share knowledge privately with your coworkers using our flagship Q&A engine.
                </div>
                <div class="option-button">
                    <a href="#" class="option-link btn btn-orange">
@@ -68,13 +79,13 @@
                    Public Q&A
                </div>
                <div class="option-description">
-                   Find the right job through high quality listings and search for roles based on title, technology stack, salary, location, and more.
+                   Do the best in exams through high quality listings.
 
 
                </div>
                <div class="option-button">
                    <a href="#" class="option-link btn btn-dark-blue">
-                       Find a job
+                       Ace in Exams
                    </a>
                </div>
            </div>
@@ -156,7 +167,7 @@
                        </div>
                        <div class="plan-feature">
                            <i class="fab fa-keycdn"></i>
-                           <span class="plan-text">Your own private space hosted on stackoverflow.com</span>
+                           <span class="plan-text">Your own private space hosted on readerflow.com</span>
                        </div>
                        <div class="plan-feature">
                            <i class="fas fa-archive"></i>
